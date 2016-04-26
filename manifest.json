@@ -1,0 +1,32 @@
+{
+	"manifest_version": 3,
+
+	"name": "Short Copy",
+	"description": "Press Ctrl+Shift+C to copy the web address of the page you are currently on, and shorten it automatically",
+	"version": "1.0",
+
+	"background": {
+	    "scripts": ["function.js"],
+	    "persistent": false
+	},
+	"browser_action": {
+		"default_popup": "popup.html",
+		"default_icon": "icon.png"
+	},
+	"commands": {
+		"toggle-feature": {
+			"suggested_key": { "default": "Ctrl+Shift+Y" },
+			"description": "Send a 'toggle-feature' event to the extension"
+		},
+		"_execute_browser_action": {
+			"suggested_key": {
+				"default": "Ctrl+Shift+F",
+				"mac": "MacCtrl+Shift+F"
+			}
+		}
+	},
+	"permissions": [
+		"clipboardWrite",
+		"tabs"	
+	]
+}
