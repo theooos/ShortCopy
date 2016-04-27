@@ -2,7 +2,7 @@
 	"manifest_version": 3,
 
 	"name": "Short Copy",
-	"description": "Press Ctrl+Shift+C to copy the web address of the page you are currently on, and shorten it automatically",
+	"description": "Press Alt+Shift+C to copy the web address of the page you are currently on, and shorten it automatically",
 	"version": "1.0",
 
 	"background": {
@@ -20,13 +20,13 @@
 		},
 		"_execute_browser_action": {
 			"suggested_key": {
-				"default": "Ctrl+Shift+F",
-				"mac": "MacCtrl+Shift+F"
+				"default": "Alt+Shift+C"
 			}
 		}
 	},
 	"permissions": [
 		"clipboardWrite",
-		"tabs"	
+		"tabs",
+		"http://rod.gs/*"
 	]
 }
