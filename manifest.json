@@ -1,16 +1,24 @@
 {
-  "name": "Short Copy",
-  "version": "0.3",
-  "description": "Creates a keyboard shortcut (Alt + Shift + P) to copy current URL and shorten it.",
-  "background": {
-    "persistent": false,
-    "scripts": ["background.js"]
-  },
-  "commands": {
-    "toggle-pin": {
-      "suggested_key": { "default": "Alt+Shift+P" },
-      "description": "Toggle tab pin"
-    }
-  },
-  "manifest_version": 2
+	"name": "Short Copy",
+	"version": "0.3",
+	"description": "Creates a keyboard shortcut (Alt + Shift + P) to copy current URL and shorten it.",
+	
+	"permissions": [
+		"http://*.google.com/*",
+		"clipboardWrite",
+		"activeTab"],
+	"content_security_policy": "script-src 'self' https://apis.google.com; object-src 'self'",
+	
+	"background": {
+		"persistent": false,
+		"scripts": ["background.js"]
+	},
+
+	"commands": {
+		"toggle-pin": {
+			"suggested_key": { "default": "Alt+Shift+P" },
+			"description": "Toggle tab pin"
+		}
+	},
+	"manifest_version": 2
 }
