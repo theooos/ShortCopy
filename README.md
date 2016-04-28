@@ -1,5 +1,9 @@
 # ShortCopy
-Copies the URL of the current page you are on, and automatically shortens it so when you paste it you paste a short url instead.
+Copies the URL of the current page you are on, and automatically shortens it using goo.gl.
+For those kinds of people, like myself, who are sickened when they're sent a 200 character URL.
 
-## rod.gs
-Will hopefully incorporate http://rod.gs/about/api as it seems very easy to use.
+## Goo.gl
+Uses goo.gl to convert URLs. You will have to provide your own API access token for it to work however.
+
+## Usage
+The key command to activate this is Alt+Shift+P.
