@@ -30,7 +30,7 @@ function makeShort(longUrl){
 }
 
 function load()	{
-	gapi.client.setApiKey('AIzaSyCXLflVVdffvNczZ1iyufY6Srdf3w3ysFU');
+	gapi.client.setApiKey('INSERT KEY HERE');
 	gapi.client.load('urlshortener', 'v1',function(){});
 }
 
