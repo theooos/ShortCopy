@@ -21,7 +21,7 @@ function makeShort(longUrl){
 			dummy.select();
 			document.execCommand("copy");
 			document.body.removeChild(dummy);
-			// alert("Copied: "+response.id+"!");
+			alert("Copied: "+response.id+". Thanks for using ShortCopy.");
 		}
 		else{
 			alert("Error shortening " + longUrl + ". Please report.");
@@ -30,7 +30,7 @@ function makeShort(longUrl){
 }
 
 function load()	{
-	gapi.client.setApiKey('INSERT KEY HERE');
+	gapi.client.setApiKey('INSERT ACCESS TOKEN HERE');
 	gapi.client.load('urlshortener', 'v1',function(){});
 }
 
