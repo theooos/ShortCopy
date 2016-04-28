@@ -1,6 +1,6 @@
 {
 	"name": "Short Copy",
-	"version": "0.3",
+	"version": "1.0",
 	"description": "Creates a keyboard shortcut (Alt + Shift + P) to copy current URL and shorten it.",
 	
 	"permissions": [
