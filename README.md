@@ -6,4 +6,4 @@ For those kinds of people, like myself, who are sickened when they're sent a 200
 Uses goo.gl to convert URLs. You will have to provide your own API access token for it to work however.
 
 ## Usage
-The key command to activate this is Alt+Shift+P.
+The key command to activate this is Alt+Shift+C.
