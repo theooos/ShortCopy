@@ -9,4 +9,4 @@ Uses goo.gl to convert URLs. You will have to provide your own API access token 
 The key command to activate this is Alt+Shift+C.
 
 ## Known bugs
-Connection times out with gapi and hence extension breaks. Will look into fixing this post exams.
+* Connection times out with gapi and hence extension breaks. Will look into fixing this post exams.
