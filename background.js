@@ -13,6 +13,7 @@ function makeShort(longURL){
 			var data = JSON.parse(xhr.responseText);
 			var url = data["shorturl"];
 			copyToClipboard(url);
+			notify(url);
 		}
     }
 
@@ -39,5 +40,15 @@ function copyToClipboard(url){
 	dummy.select();
 	document.execCommand("copy");
 	document.body.removeChild(dummy);
-	alert("Copied: "+url+". Thanks for using ShortCopy.");
+}
+
+function notify(url){
+	var notifOptions = {
+		"type": "basic",
+		"iconUrl": "48.png",
+		"title": "Copied!",
+		"message": url+" has been copied to your clipboard!"
+	}
+
+	chrome.notifications.create('48.png', notifOptions, null);
 }
